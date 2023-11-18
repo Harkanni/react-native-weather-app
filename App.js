@@ -8,6 +8,7 @@ import { useGetWeather } from './src/hooks/UseGetWeather'
 import ErrorItem from './src/components/ErrorItem'
 
 import Tabs from './src/components/Tabs'
+import OurButton from './src/demonstration/OurButton'
 
 const Tab = createBottomTabNavigator()
 
@@ -29,6 +30,13 @@ const App = () => {
       {error ? <ErrorItem /> : <ActivityIndicator size={'large'} color={'blue'} />}
     </View>
   )
+
+// return (
+//    <View style={styles.container}>
+//       <OurButton />
+//       {error ? <ErrorItem /> : <ActivityIndicator size={'large'} color={'blue'} />}
+//    </View>
+// )
 }
 
 const styles = StyleSheet.create({
